@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="R.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI</title>
+</head>
+<body>
+    <input type="text" name="" id="main" placeholder="Plate number">
+    <div id="plates"></div>
+    <div id="mobileInfo">
+        <button id="mobile">Mobile mode</button>
+        <button id="noMobile">Normal mode</button>
+    </div>
+    <button id="enter">Enter</button>
+    <button id="view">View plates</button>
+    <button id="save">Save plates</button>
+    <button id="unsave">Delete plates</button>
+    
+
+    <div id="permWindow">
+        <h2>All plate numbers will be deleted, please confirm</h2>
+        <button id="yes">Confirm</button>
+        <button id="no">No confirmation</button>
+    </div>
+    
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: grey;
+
+        }
+        #main{
+            border: none;
+            height: 25px;
+            width: 230px;
+            font-size: 20px;
+
+        }
+        #plates{
+            height: 400px;
+            width: 400px;
+            background-color: white;
+            border: 5px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            font-size: 20px;
+            color: red;
+        }
+        #permWindow{
+            background-color: white;
+            height: 130px;
+            width: 400px;
+            text-align: center;
+            display: none;
+            
+
+        }
+        #permWindow button{
+            cursor: pointer;
+        }
+        #infoWindow{
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            opacity: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #enter, #view, #save, #unsave{
+            display: none;
+
+        }
+    </style>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
